@@ -1,0 +1,25 @@
+{
+  "name": "cswarbreck.github.io",
+  "version": "1.0.0",
+  "description": "Github Pages repository for Cosmo's personal profile",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cswarbreck/cswarbreck.github.io.git"
+  },
+  "author": "Cosmo Swarbreck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cswarbreck/cswarbreck.github.io/issues"
+  },
+  "homepage": "https://github.com/cswarbreck/cswarbreck.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "sass": "^1.3.2"
+  }
+}
