@@ -8,19 +8,20 @@ var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
-var runSequence = require('run-sequence');
+var runSequence = require('run-sequence').use(gulp);
 
 
 // Browser reloading tasks
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src('app/site.scss')
     .pipe(sass())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
         stream: true
-    }));
+    }))
 });
+
 
 gulp.task('browser-sync', function(){
     browserSync.init({
@@ -33,9 +34,9 @@ gulp.task('browser-sync', function(){
 // This is the master control task for browser reloading
 
 gulp.task('watch', ['browser-sync', 'sass'], function(){
-    gulp.watch('app/scss/**/*.scss',['sass']);
+    gulp.watch('app/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/**/*.js', browserSync.reload);
 });
 
 // In keeping with best practices, the watch task is usually
@@ -43,11 +44,19 @@ gulp.task('watch', ['browser-sync', 'sass'], function(){
 // For reference, tasks named 'default' can be called by
 // Simply typing $ gulp in the CLI
 
-gulp.task('default', function (callback) {
-    runSequence(['sass','browserSync', 'watch'],
-      callback
-    );
-  });
+
+gulp.task('default', ['watch']);
+
+
+
+gulp.task('bootstrap', function() {
+    gulp.src('./node_modules/bootstrap/scss/**/*.scss')
+        .pipe(gulp.dest('./app/scss/bootstrap'));
+
+    gulp.src('./node_modules/bootstrap/js/dist/**/*.js')
+        .pipe(gulp.dest('./app/js/bootstrap'));
+
+});
 
 // The following tasks will create the production files
 // and send them to the dist folder.
