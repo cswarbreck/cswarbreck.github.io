@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6282,5 +6283,139 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* Google Fonts */
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden; }
+
 body {
-  background-color: white; }
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #191919; }
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../images/u3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .masthead:before {
+    content: '';
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top left, #096, #900);
+    opacity: .65; }
+  .masthead #landing-page {
+    position: relative;
+    text-align: center;
+    margin-top: 16rem;
+    margin-bottom: 9rem;
+    padding-top: 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    @media (min-width: 576px) {
+      .masthead #landing-page {
+        margin-top: 0rem; } }
+    @media (min-width: 768px) {
+      .masthead #landing-page {
+        margin-top: 0rem; } }
+  .masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0; }
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+      background-size: cover; }
+      .masthead h1 {
+        font-size: 5rem; } }
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite; }
+
+@keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: black; } }
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  @media (min-width: 768px) {
+    #mainNav {
+      padding-left: 0px !important;
+      padding-right: 0px !important; } }
+  #mainNav .navbar-toggler {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 11px;
+    color: lightseagreen;
+    border: 1px solid lightcoral; }
+  #mainNav .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700; }
+  #mainNav a {
+    color: white; }
+  #mainNav .navbar-nav {
+    text-transform: uppercase; }
+    #mainNav .navbar-nav .nav-item {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out; }
+      #mainNav .navbar-nav .nav-item:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent; }
+      #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+        outline: none;
+        background-color: transparent; }
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent;
+      padding-left: 0px !important;
+      padding-right: 0px !important; }
+      #mainNav.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 3px double lightcoral;
+        background: #222; }
+      #mainNav .nav-link.active {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3); }
+        #mainNav .nav-link.active:hover {
+          color: white; } }
