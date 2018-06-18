@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
     "Welcome to my site!",
-    "Scroll down for more info or,",
+    "You can either use the buttons to see more, or",
     "Download my CV here:"
     
     );
@@ -34,7 +34,7 @@ var aText = new Array(
      } else {
       setTimeout("typewriter()", iSpeed);
      }
-    }
+    };
     
     
     typewriter();

@@ -13,66 +13,226 @@
     <title></title>
 
     <link rel='stylesheet' type='text/css' href='css/site.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="js-scroll-trigger">   
-    
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/#about">About</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
+
+                </ul>
             </div>
-              </nav>
-              
+        </div>
+    </nav>
+
     <div class="masthead">
         <div class="container text-left text-light my-auto" id=landing-page>
             <h1>Cosmo Swarbreck</h1>
             <hr style="border-bottom: 1px solid white; max-width: 500px; margin-bottom: 1.5rem" align="left"></hr>
 
             <h2 class="mb-5" id="typedtext" align="left"></h2>
-            <div onload class="show">
-            <a style="margin-top: auto" href="cv12june.pdf" role="button" class="btn btn-outline-light btn-lg" download>Download CV</a>
+            <div onload class="delay">
+                <a style="margin-top: auto" href="cv12june.pdf" role="button" class="btn btn-outline-light btn-lg" download>Download CV</a>
             </div>
         </div>
     </div>
 
-    <div class="container" style="height:500px; width: 100%">
-        <h1>Lorem Ipsum</h1>
+    <div class="container icon-bar">
+        <div id="icon-bar">
+            <a href="#" class="facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="google">
+                <i class="fa fa-google"></i>
+            </a>
+            <a href="#" class="linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#" class="youtube">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
     </div>
-    <section class="content-section bg-light" id="about">
-            <div class="container text-center">
-              <div class="row">
-                <div class="col-lg-10 mx-auto">
-                  <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                  <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                    <a href="https://unsplash.com/">Unsplash</a>!</p>
-                  <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-                </div>
-              </div>
+
+    <div id="about">
+        <div class="container text-light">
+            <div class="page-header">
+                <h1 id="timeline">Timeline</h1>
             </div>
-          </section>
+
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge">
+                        <i class="glyphicon glyphicon-check"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                            <p>
+                                <small class="text-muted">
+                                    <i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning">
+                        <i class="glyphicon glyphicon-credit-card"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                            <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no
+                                mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus
+                                a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper.
+                                Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque
+                                laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo
+                                massa.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger">
+                        <i class="glyphicon glyphicon-credit-card"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge info">
+                        <i class="glyphicon glyphicon-floppy-disk"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                            <hr>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                    <i class="glyphicon glyphicon-cog"></i>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Something else here</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Separated link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge success">
+                        <i class="glyphicon glyphicon-thumbs-up"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
+                                porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros
+                                vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois
+                                paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso
+                                pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <!-- <span class="blinking-cursor">|</span> -->
 
-    
+
 
 
 
@@ -94,15 +254,8 @@
     <script src="js/typedtext.js"></script>
     <script src="js/jquery/jquery.js"></script>
     <script src="js/jquery-easing/jquery.easing.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".show").hide();
-            setTimeout(function () {
-                $(".show").show();
-            }, 12500);
-        });
-    </script>
+
+    <script src="js/delay.js"></script>
     <!-- endbuild -->
 
 
@@ -125,3 +278,31 @@
 </body>
 
 </html>
+
+<!--         <div class="container text-dark">
+            <div class="row pt-5">
+                <div class="col-sm-7">
+                    <h2>We all have to start somewhere!</h2>
+                    <br></br>
+                    <p>For me, I started with HTML, CSS and vanilla JS and built my first static websites locally. 
+                    I then progressed to NodeJS and NPM, using modules such as ExpressJS, with Handlebars for templating and Bootstrap 4 for responsive design. 
+                    Later projects included MongoDB, Mongoose and KeytstoneJS, with version control on GitHub that can be found on my page. 
+                    Design in underway on the Julia Rose site, with original photos, videos and graphics being produced.</p>
+                    <br></br>
+                    <p>I’m most interested in the elements of front-end closest to UX/UI design with HTML and CSS/SASS, 
+                        but I have been proactive in learning about SPA, MVC and MVVM type applications and their back ends out of necessity, 
+                        as a freelancer building sites end-to-end. In particular, I’ve been keen to understand the evolution of the JavaScript ecosystem; 
+                        how a lightweight language designed for small client-side event-driven tasks in the browser
+                         became a technology capable of supporting entire applications, including 
+                         traditionally back-end features like webpage requests, data transfers and general server tasks.</p>
+                    <br></br>
+                    <p>I was drawn to front-end design over other software roles out of a need to be creative but wanting to remain in a technical industry. 
+                        Over the years and presently, I’ve also worked part-time as an artist, namely painting, and what I have found in front-end design, 
+                        is an opportunity to combine my creativity with my scientific background.</p>
+                </div>
+                <div class="col-sm-5">
+
+                </div>
+            </div>
+        </div>
+    </div> -->
