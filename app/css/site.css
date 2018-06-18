@@ -6302,7 +6302,10 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   align-content: center;
-  right: 25vh; }
+  right: 20vh; }
+  .icon-bar #icon-bar #icon-bar .facebook :hover {
+    background: #3B5998;
+    color: white; }
   .icon-bar #icon-bar a {
     display: block;
     text-align: center;
@@ -6310,26 +6313,23 @@ body {
     margin: 0.5rem;
     transition: all 0.3s ease;
     max-height: 4rem;
-    max-width: 4rem;
+    min-width: 4rem;
     border: 1px solid white;
     border-radius: 4px;
     color: white;
     font-size: 20px;
     background: transparent; }
-    .icon-bar #icon-bar a .facebook a:hover {
-      background: #3B5998;
-      color: white; }
 
 /* Style the social media icons with color, if you want */
 .facebook .icon-bar a:hover {
   background: #3B5998;
   color: white; }
 
-.facebook {
-  background: #3B5998;
+.facebook a:hover {
+  background: #3B5998 !important;
   color: white; }
 
-.twitter {
+.twitter :hover {
   background: #55ACEE;
   color: white; }
 
@@ -6514,7 +6514,8 @@ body {
     padding: 20px;
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    background: rgba(124, 14, 14, 0.425); }
   #about .timeline > li > .timeline-panel:before {
     position: absolute;
     top: 26px;
