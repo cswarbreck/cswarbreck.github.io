@@ -23,12 +23,11 @@ body{
     transform: translateY(-50%);
     align-content: center;
     right: 20vh;
-    #icon-bar{
-    .facebook :hover{
-        background: #3B5998;
+    :hover{
+        background: rgb(33, 154, 175);
         color: white; 
     }
-}
+
     a {
         display: block;
         text-align: center;
@@ -241,6 +240,8 @@ body{
     background:
     linear-gradient(to top left, hsla(160, 100%, 30%, 0.411), hsla(0, 100%, 30%, 0.37)),
     url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/skulls.png");
+    /* linear-gradient(to top left, hsla(160, 100%, 30%, 0.411), hsla(0, 100%, 30%, 0.37)),
+    url("../images/triangles.jpg"); */
     background-repeat: repeat;
     min-height: 100vh;
     .page-header {
