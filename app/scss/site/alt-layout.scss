@@ -4,10 +4,10 @@ $grey: #343436;
 $lightgrey: #959595;
 $sideWidth: 80px;
 
-$font-serif-1: 'Anonymous Pro', monospace;
+$font-serif: 'Anonymous Pro', monospace;
 $font-sans-1: 'Anonymous Pro', monospace;
 
-$font-serif: "ff-meta-serif-web-pro", serif;
+$font-serif-1: "ff-meta-serif-web-pro", serif;
 $font-sans: "nimbus-sans", sans-serif;
 
 $transition: all 0.3s cubic-bezier(.05, .69, .14, 1);
@@ -49,7 +49,7 @@ a {
     bottom: 0;
     z-index: 1000;
     width: $sideWidth;
-    border-right: 1px dashed rgba(black,.3);
+    border-right: 2px dashed black;
     color: rgba(black,.5);
     font-family: $font-sans;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ a {
             content: '';
             width: 1.3rem;
             display: block;
-            height: 2px;
+            height: 4px;
             background: black;
         }
 
@@ -196,12 +196,12 @@ a {
     &.section--hello {
         /* background-color: #FDEF52; */
         background: url('../images/u3.jpg');
-        /* background: linear-gradient(to top right, hsla(209, 100%, 30%, 0.555), hsla(29, 97%, 42%, 0.644)), url('../images/u3.jpg'); */
+        /* background: linear-gradient(to top right, hsla(209, 100%, 30%, 0.438), hsla(29, 97%, 42%, 0.335)), url('../images/u3.jpg'); */
         background-position: center right;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        color: white;
+        color: black;
       
     }
 
@@ -215,7 +215,7 @@ a {
 
     &.section--about {
 
-        color: #222;
+        color: black;
         /* background: linear-gradient(to bottom right, hsla(160, 100%, 30%, 0.555), hsla(0, 100%, 30%, 0.377)), url('../images/triangles.jpg'); */
         background: url('../images/triangles2.jpg');
         background-position: bottom center;

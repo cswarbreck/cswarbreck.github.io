@@ -6284,7 +6284,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 html {
   box-sizing: border-box;
-  font-family: "ff-meta-serif-web-pro", serif;
+  font-family: "Anonymous Pro", monospace;
   color: #555;
   font-size: 16px; }
   @media (min-width: 6.25em) {
@@ -6368,7 +6368,7 @@ a {
   bottom: 0;
   z-index: 1000;
   width: 80px;
-  border-right: 1px dashed rgba(0, 0, 0, 0.3);
+  border-right: 2px dashed black;
   color: rgba(0, 0, 0, 0.5);
   font-family: "nimbus-sans", sans-serif;
   text-transform: uppercase;
@@ -6420,7 +6420,7 @@ a {
       content: '';
       width: 1.3rem;
       display: block;
-      height: 2px;
+      height: 4px;
       background: black; }
     .anchornav li:last-child::after {
       display: none; }
@@ -6438,7 +6438,7 @@ a {
       padding: .5em 0 0;
       opacity: .3;
       letter-spacing: normal;
-      font-family: "ff-meta-serif-web-pro", serif;
+      font-family: "Anonymous Pro", monospace;
       text-transform: none; }
     .anchornav a:hover {
       color: #de5f5f; }
@@ -6476,19 +6476,19 @@ a {
   .section.section--hello {
     /* background-color: #FDEF52; */
     background: url("../images/u3.jpg");
-    /* background: linear-gradient(to top right, hsla(209, 100%, 30%, 0.555), hsla(29, 97%, 42%, 0.644)), url('../images/u3.jpg'); */
+    /* background: linear-gradient(to top right, hsla(209, 100%, 30%, 0.438), hsla(29, 97%, 42%, 0.335)), url('../images/u3.jpg'); */
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    color: white; }
+    color: black; }
   .section.section--intro {
     background-color: #db4369;
     color: black; }
     .section.section--intro svg {
       fill: #db4369; }
   .section.section--about {
-    color: #222;
+    color: black;
     /* background: linear-gradient(to bottom right, hsla(160, 100%, 30%, 0.555), hsla(0, 100%, 30%, 0.377)), url('../images/triangles.jpg'); */
     background: url("../images/triangles2.jpg");
     background-position: bottom center;
