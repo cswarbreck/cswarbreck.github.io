@@ -6514,7 +6514,8 @@ a {
     .section.section--intro svg {
       fill: #e45c7a;
       stroke: #e45c7a;
-      stroke-width: 2px; }
+      stroke-width: 2px;
+      top: -1px; }
   .section.section--about {
     color: black;
     background: linear-gradient(to top right, rgba(247, 236, 187, 0.692), rgba(246, 140, 121, 0.13)), url("../images/triangles2.jpg");
@@ -6545,7 +6546,7 @@ a {
       stroke-width: 2px; }
       .section.section--portfolio svg.bottom {
         top: auto;
-        bottom: -50px; }
+        bottom: -49px; }
   .section.section--portfolio1 {
     background-color: lightseagreen;
     color: white;
