@@ -6517,7 +6517,7 @@ a {
       stroke-width: 2px; }
   .section.section--about {
     color: black;
-    background: linear-gradient(to top right, rgba(247, 236, 187, 0.692), rgba(246, 140, 121, 0.13)), url("../images/triangles2.jpg");
+    background: linear-gradient(to top right, rgba(246, 235, 187, 0.856), rgba(246, 140, 121, 0.13)), url("../images/triangles2.jpg");
     /* background: url('../images/triangles2.jpg'); */
     background-position: bottom center;
     background-repeat: no-repeat;
